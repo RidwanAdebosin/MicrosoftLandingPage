@@ -41,11 +41,14 @@ header{
 }
 
 @media (max-width: 600px) {
+    nav{
+      font-size: 16px;
+    }
 
 }
 
 .rightImageContainer{
-    width: 100%;
+    width: 60%;
 }
 
 .rightImage{
@@ -54,11 +57,12 @@ header{
 }
 
 .landingContainer{
-    display: grid;
-    grid-template-columns: 40% 60%;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    max-height: 400px;
+    height: auto;
 }
+
 
 .leftContent{
     display: flex;
@@ -68,16 +72,36 @@ header{
     background: skyblue;
     padding: 20px;
     height: 400px;
+    width: 40%;
+    min-width: 350px;
+}
+
+@media (max-width: 600px) {
+.landingContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightImageContainer{
+    width: 100%;
+}
+
+.leftContent{
+    width: 100%;
+}
 }
 
 .leftContent h4{
     margin-block-end: 1rem;
     font-size: 45px;
     font-weight: 300;
+    word-wrap: break-word;
 }
 
 .leftContent p{
     font-size: 18px;
+    word-wrap: break-word;
 }
 
 .rightNav img{
@@ -88,7 +112,6 @@ header{
     display: flex;
     gap: 2px;
     margin-block-start: 1rem;
-  
 }
 
 button{
@@ -107,30 +130,85 @@ button{
 
 section{
     display: flex;
-    margin-block-start: 1rem;
+    margin-block-start: 2rem;
     gap: 2rem;
     width: 100%;
+    flex-wrap: wrap;
+    margin-block-end: 5rem;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+section{
+    justify-content: center;
+}
 }
 
 .box-container{
-    width: max-content;
+    width: 300px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
 
 .box-container img{
     margin-block-end: 1.5rem;
+    object-fit: contain;
+    width: 100%;
 }
 
 .box-container h1{
     margin-block-end: 2px;
     padding: 15px;
+    max-width: 300px;
 }
 
 .box-container p{
+    max-width: 300px;
     margin-block-end: 1rem;
     padding: 15px;
 }
 
 section button{
     margin-inline-start: 15px;
+    margin-block-end: 1rem;
 }
+
+article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E6E6E6;
+    width: 100%;
+}
+
+.leftArticle{
+    width: 40%;
+    margin-inline-start: 5rem;
+}
+
+.leftArticle h1, p{
+    margin-block-end: 10px;
+}
+article img{
+    width: 60%;
+}
+
+@media (max-width: 600px) {
+    article{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+        background-color: transparent;
+    }
+
+    .leftArticle, article img{
+        width: 100%;
+    }
+
+    .leftArticle{
+        margin-inline-start: 0px;
+        padding: 20px;
+        width: 100%;
+        line-height: 1.5;
+    }
+    }
