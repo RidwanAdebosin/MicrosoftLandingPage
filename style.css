@@ -250,6 +250,9 @@ article img{
         flex-wrap: wrap;
     }
 
+    footer h3{
+        font-weight: 300;
+    }
     .footer-list:first-child{
         margin-inline-end: 5rem;
     }
