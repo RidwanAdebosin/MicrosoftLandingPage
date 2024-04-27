@@ -159,7 +159,7 @@ section{
 }
 
 .box-container h1{
-    margin-block-end: 2px;
+    margin-block-end: 1px;
     padding: 15px;
     max-width: 300px;
 }
@@ -214,4 +214,18 @@ article img{
         width: 100%;
         line-height: 1.5;
     }
+    }
+
+    .extra{
+        background: #FFB900;
+        padding: 3px;
+        width: fit-content;
+        margin-inline-start: 1rem;
+        font-weight: bold;
+        /* height: 50px; */
+    }
+    
+    .box-container .first{
+        margin-block-start: -10px;
+        padding-top: 0px;
     }
