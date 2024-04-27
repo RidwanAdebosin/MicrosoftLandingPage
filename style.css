@@ -40,9 +40,28 @@ header{
     padding: 1rem;
 }
 
+.rightNav .search{
+    display: none;
+    
+}
+
 @media (max-width: 600px) {
-    nav{
-      font-size: 16px;
+    .leftNav img{
+      width: 130px;
+    }
+
+    header nav, header a{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+    }
+
+    .rightNav{
+        display: flex;
+        gap: 20px;
     }
 
 }
@@ -122,6 +141,12 @@ button{
     color: white;
     font-weight: bold;
     cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover{
+    
+    background: #02457c;
 }
 
 .leftContent button:last-child{
@@ -192,6 +217,7 @@ article{
 .leftArticle h1, p{
     margin-block-end: 10px;
 }
+
 article img{
     width: 60%;
 }
@@ -240,7 +266,7 @@ article img{
         line-height: 2.5;
         font-size: 14px;
     }
-
+    
     footer{
         background-color: #F2F2F2;
         padding: 3rem 5rem;
@@ -248,16 +274,18 @@ article img{
         display: flex;
         gap: 5rem;
         flex-wrap: wrap;
+        color: rgb(100, 98, 98);
     }
 
     footer h3{
         font-weight: 300;
+        font-size: 18px;
     }
 
     .footer-list{
         width: 180px;
     }
-    
+
     .footer-list:first-child{
         margin-inline-end: 5rem;
     }
