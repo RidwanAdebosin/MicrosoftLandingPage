@@ -61,6 +61,7 @@ header{
     flex-wrap: wrap;
     width: 100%;
     height: auto;
+    margin-block-end: 5rem;
 }
 
 
@@ -128,7 +129,7 @@ button{
     background: transparent;
 }
 
-section{
+section, aside{
     display: flex;
     margin-block-start: 2rem;
     gap: 2rem;
@@ -136,6 +137,7 @@ section{
     flex-wrap: wrap;
     margin-block-end: 5rem;
     justify-content: center;
+    margin-block-end: 5rem;
 }
 
 @media (max-width: 600px) {
@@ -168,7 +170,7 @@ section{
     padding: 15px;
 }
 
-section button{
+section button, aside button{
     margin-inline-start: 15px;
     margin-block-end: 1rem;
 }
@@ -179,6 +181,7 @@ article{
     justify-content: center;
     background-color: #E6E6E6;
     width: 100%;
+    margin-block-end: 5rem;
 }
 
 .leftArticle{
