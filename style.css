@@ -222,10 +222,40 @@ article img{
         width: fit-content;
         margin-inline-start: 1rem;
         font-weight: bold;
-        /* height: 50px; */
     }
     
     .box-container .first{
         margin-block-start: -10px;
         padding-top: 0px;
+    }
+
+    .flex-extras{
+        display: flex;
+        align-items: center;
+        margin-block-end: 5rem;
+    }
+
+    footer li{
+        list-style-type: none;
+        line-height: 2.5;
+        font-size: 14px;
+    }
+
+    footer{
+        background-color: #F2F2F2;
+        padding: 3rem 5rem;
+        width: 100%;
+        display: flex;
+        gap: 5rem;
+        flex-wrap: wrap;
+    }
+
+    .footer-list:first-child{
+        margin-inline-end: 5rem;
+    }
+
+    @media (max-width: 600px) {
+        footer{
+           justify-content: center;
+        }
     }
